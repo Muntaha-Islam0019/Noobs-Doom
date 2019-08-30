@@ -18,6 +18,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="FPSInput.cs" t="Include" />
           <e p="MouseLook.cs" t="Include" />
           <e p="Spin.cs" t="Include" />
         </e>
