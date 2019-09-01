@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5504a9fc-b6d6-477e-ab98-8aea24aef716" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FPSInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FPSInput.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Noobs Doom/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Noobs Doom/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Noobs Doom/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Noobs Doom/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FPSInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FPSInput.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +93,9 @@
       <workItem from="1566817085402" duration="946000" />
       <workItem from="1567170023720" duration="166000" />
       <workItem from="1567170216459" duration="106000" />
-      <workItem from="1567170536870" duration="3013000" />
+      <workItem from="1567170536870" duration="3374000" />
+      <workItem from="1567363978602" duration="632000" />
+      <workItem from="1567364634927" duration="1106000" />
     </task>
     <servers />
   </component>
