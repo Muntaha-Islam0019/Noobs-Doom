@@ -9,6 +9,8 @@ public class RayShooter : MonoBehaviour
 {
     // Creating a camera object to hold the main camera.
     private Camera _camera;
+
+    // private int _counter_of_hit = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -36,7 +38,10 @@ public class RayShooter : MonoBehaviour
             // Datatype what deals with intersections of the ray.
             RaycastHit hit;
 
-            
+            /*
+                'out' ensures that the data structure manipulated within the command is the same
+                object that exists outside the command. 
+            */
             if (Physics.Raycast(ray, out hit))
             {
                 // Checking if the ray hits at which point.
@@ -44,7 +49,22 @@ public class RayShooter : MonoBehaviour
 
                 // Coroutines does a job after with pauses indicated by the developer. 
                 // Create an object and deletes it afterwards.
-                StartCoroutine(HitIndicator(hit.point));
+                
+                // The object that was hit.
+                GameObject hitGameObject = hit.transform.gameObject;
+                
+                // For checking if the target has ReactiveTarget component.
+                ReactiveTarget target = hitGameObject.GetComponent<ReactiveTarget>();
+
+                if (target != null)
+                {
+                    // Debug.Log("Hit! " + ++_counter_of_hit);
+                    target.react_to_hit();
+                }
+                else
+                {
+                    StartCoroutine(HitIndicator(hit.point));
+                }
             }
         }
     }

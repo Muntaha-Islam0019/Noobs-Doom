@@ -21,6 +21,7 @@
           <e p="FPSInput.cs" t="Include" />
           <e p="MouseLook.cs" t="Include" />
           <e p="RayShooter.cs" t="Include" />
+          <e p="ReactiveTarget.cs" t="Include" />
           <e p="Spin.cs" t="Include" />
         </e>
       </e>
