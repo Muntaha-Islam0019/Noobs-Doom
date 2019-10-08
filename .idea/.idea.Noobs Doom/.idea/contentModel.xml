@@ -23,6 +23,7 @@
           <e p="RayShooter.cs" t="Include" />
           <e p="ReactiveTarget.cs" t="Include" />
           <e p="Spin.cs" t="Include" />
+          <e p="WanderingAI.cs" t="Include" />
         </e>
       </e>
       <e p="Noobs Doom.sln" t="IncludeFlat" />

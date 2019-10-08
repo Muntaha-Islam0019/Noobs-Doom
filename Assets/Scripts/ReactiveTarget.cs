@@ -20,6 +20,13 @@ public class ReactiveTarget : MonoBehaviour
 
     public void react_to_hit()
     {
+        // If the object is not null, then kill it.
+        WanderingAI behaviour = GetComponent<WanderingAI>();
+        if (behaviour != null)
+        {
+            behaviour.setLife(false);
+        }
+        
         StartCoroutine(Die());
     }
 
