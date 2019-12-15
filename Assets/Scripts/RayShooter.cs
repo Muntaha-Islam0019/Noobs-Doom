@@ -88,6 +88,11 @@ public class RayShooter : MonoBehaviour
         
         // Tells the coroutine to wait of 1 secs and then destroy the object.
         yield return new WaitForSeconds(1);
+        
+        /*
+         * Destroy tells the game engine that remove this object from the scene graph. Though, it
+         * still remains in the memory. sphere would still be null.
+         */
         Destroy(sphere);
     }
 }

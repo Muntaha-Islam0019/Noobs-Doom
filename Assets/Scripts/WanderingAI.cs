@@ -32,18 +32,20 @@ public class WanderingAI : MonoBehaviour
             RaycastHit hit;
         
             /*
-         * Casting a ray consisting an area of sphere, as, this will help the object to find out if there
-         * is an object in front of it. ScreenPointToRay could be used, though, then it'd cause problem
-         * for certain objects.
-        */
+             * Casting a ray consisting an area of sphere, as, this will help the object to find out if there
+             * is an object in front of it. ScreenPointToRay could be used, though, then it'd cause problem
+             * for certain objects.
+             */
+            
             if (Physics.SphereCast(ray, 0.75f, out hit))
             {
                 if (hit.distance < obstacleRange)
                 { 
                     /*
-                 * If the object finds another object in front of it, it'd move towards
-                 * a random angle.
-                */
+                     * If the object finds another object in front of it, it'd move towards
+                     * a random angle.
+                     */
+                    
                     float angle = Random.Range(-110, 110);
                     transform.Rotate(0, angle, 0);
                 }
