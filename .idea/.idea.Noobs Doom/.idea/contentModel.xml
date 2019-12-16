@@ -18,8 +18,10 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Fireball.cs" t="Include" />
           <e p="FPSInput.cs" t="Include" />
           <e p="MouseLook.cs" t="Include" />
+          <e p="PlayerCharacter.cs" t="Include" />
           <e p="RayShooter.cs" t="Include" />
           <e p="ReactiveTarget.cs" t="Include" />
           <e p="SceneController.cs" t="Include" />
