@@ -11,7 +11,9 @@ public class SceneController : MonoBehaviour
      */
     [SerializeField] private GameObject enemyPrefab;
     private GameObject _enemy;
-    
+
+    public Vector3 respawnPosition = new Vector3(0, 6.25f, 0);
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,7 @@ public class SceneController : MonoBehaviour
              * Also, _enemy just stores the instance, it'd be called again and again.
              */
             _enemy = Instantiate(enemyPrefab) as GameObject;
-            _enemy.transform.position = new Vector3(0, 6.25f, 0);
+            _enemy.transform.position = respawnPosition;
             float angle = Random.Range(0, 360);
             _enemy.transform.Rotate(0, angle, 0);
         }
